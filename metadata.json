@@ -1,0 +1,6 @@
+{
+  "name": "Ejicode Outreach Tracker & Spreadsheet",
+  "description": "Client and company outreach spreadsheet for Ejicode Company to track status updates, project milestones, automated email reminders, and custom progress charts.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
