@@ -1,0 +1,444 @@
+ON2CODE MASTER SYSTEM DESIGN
+┌─────────────────────────────────────────────┐
+│                 ON2CODE                      │
+├─────────────────────────────────────────────┤
+│ Marketing Website                            │
+│ Learning Management System (LMS)            │
+│ Coding Platform                              │
+│ Assessment Engine                            │
+│ Certificate Engine                           │
+│ Community Platform                           │
+│ Mentor Platform                              │
+│ AI Tutor                                     │
+│ Admin Portal                                 │
+│ Analytics Platform                           │
+└─────────────────────────────────────────────┘
+1. PUBLIC WEBSITE (CS50 STYLE)
+
+The public website is what visitors see before signing up.
+
+/
+├── Home
+├── Courses
+├── Bootcamps
+├── Pricing
+├── Success Stories
+├── Mentors
+├── Blog
+├── About
+├── Careers
+├── Contact
+└── Login
+Homepage
+
+Just like CS50:
+
+Hero Section
+│
+├── Video Introduction
+├── Start Learning Button
+├── Student Statistics
+├── Partner Companies
+├── Success Stories
+├── Featured Courses
+├── Learning Roadmap
+├── Testimonials
+└── Footer
+2. USER AUTHENTICATION
+Registration
+Email
+Google
+GitHub
+LinkedIn
+Apple
+Microsoft
+User Types
+Student
+Mentor
+Instructor
+Admin
+Super Admin
+Company Recruiter
+3. STUDENT DASHBOARD (EDX STYLE)
+
+After login:
+
+Dashboard
+│
+├── Continue Learning
+├── Enrolled Courses
+├── Progress Tracking
+├── Certificates
+├── Assignments
+├── Projects
+├── Coding Challenges
+├── Messages
+├── Notifications
+├── Calendar
+├── Community Feed
+└── AI Tutor
+4. COURSE SYSTEM (CS50 STYLE)
+
+Each course has:
+
+Course
+│
+├── Overview
+├── Syllabus
+├── Instructor
+├── Announcements
+├── Resources
+├── Discussions
+└── Certificate Info
+5. COURSE STRUCTURE
+
+Example:
+
+CS101
+│
+├── Week 0
+├── Week 1
+├── Week 2
+├── Week 3
+├── Week 4
+├── Week 5
+├── Week 6
+├── Week 7
+├── Week 8
+├── Week 9
+└── Final Project
+
+Just like CS50.
+
+6. INSIDE EACH WEEK
+Week 1
+│
+├── Introduction Video
+├── Lecture Notes
+├── Slides
+├── Reading Material
+├── Shorts
+├── Quiz
+├── Coding Exercise
+├── Assignment
+├── Project
+├── Discussion
+└── AI Tutor
+7. VIDEO LEARNING SYSTEM
+Video
+│
+├── Playback Speed
+├── Subtitles
+├── Transcript
+├── Notes
+├── Bookmarks
+├── Resume Watching
+├── Progress Tracking
+└── Download Resources
+8. CODING PLATFORM
+
+This is where On2Code becomes different.
+
+Browser IDE
+│
+├── Monaco Editor
+├── VSCode Experience
+├── Terminal
+├── Compiler
+├── Auto Save
+├── Git Support
+├── Test Runner
+├── File Explorer
+└── Debugger
+
+Supported Languages:
+
+Go
+C
+C++
+Python
+Java
+JavaScript
+TypeScript
+Rust
+PHP
+9. AUTO GRADING SYSTEM
+
+Just like CS50 submissions.
+
+Student Submission
+        │
+        ▼
+Sandbox Runner
+        │
+        ▼
+Unit Tests
+        │
+        ▼
+Hidden Tests
+        │
+        ▼
+Score Engine
+        │
+        ▼
+Feedback Engine
+
+Results:
+
+Passed
+Failed
+Partial Pass
+Runtime Error
+Compilation Error
+10. PROJECT SYSTEM
+
+Every course has projects.
+
+Project
+│
+├── Description
+├── Requirements
+├── Deadline
+├── Submission
+├── Auto Grading
+├── Peer Review
+└── Mentor Review
+11. QUIZ ENGINE
+Multiple Choice
+True/False
+Drag and Drop
+Code Completion
+Short Answer
+Matching Questions
+12. ASSIGNMENT SYSTEM
+Assignment
+│
+├── Instructions
+├── Resources
+├── Submission
+├── Feedback
+└── Grades
+13. CERTIFICATE ENGINE (EDX STYLE)
+
+When completed:
+
+Generate Certificate
+│
+├── Student Name
+├── Course Name
+├── Completion Date
+├── QR Verification
+├── Certificate ID
+└── Verification Link
+
+Employers can verify certificates.
+
+14. LEADERBOARD
+Global Ranking
+Country Ranking
+Course Ranking
+Weekly Ranking
+
+Gamification:
+
+XP
+Points
+Badges
+Achievements
+Levels
+15. AI TUTOR
+
+Integrated into every lesson.
+
+AI Tutor
+│
+├── Explain Concepts
+├── Debug Code
+├── Generate Hints
+├── Explain Errors
+├── Quiz Practice
+├── Interview Practice
+└── Learning Recommendations
+16. COMMUNITY PLATFORM
+
+Like Reddit + Discord.
+
+Communities
+│
+├── Course Discussions
+├── Q&A
+├── Announcements
+├── Study Groups
+├── Challenges
+└── Events
+17. LIVE CLASSES
+Zoom Integration
+Google Meet
+Live Coding
+Screen Sharing
+Attendance Tracking
+Recording Storage
+18. MENTOR SYSTEM
+Mentor Dashboard
+│
+├── Students
+├── Sessions
+├── Feedback
+├── Assignment Reviews
+└── Progress Monitoring
+19. JOB PORTAL
+
+After course completion.
+
+Jobs
+│
+├── Internships
+├── Junior Roles
+├── Remote Jobs
+├── Freelance Jobs
+└── Company Partnerships
+20. COMPANY RECRUITER PORTAL
+Recruiter Dashboard
+│
+├── Search Students
+├── View Certificates
+├── View Projects
+├── View Rankings
+└── Contact Students
+21. ADMIN PANEL
+Admin
+│
+├── Users
+├── Courses
+├── Payments
+├── Certificates
+├── Mentors
+├── Reports
+├── Analytics
+├── Support
+└── Security
+22. ANALYTICS SYSTEM
+
+Track:
+
+Enrollments
+Revenue
+Course Completion
+Drop-Off Rate
+Watch Time
+Quiz Scores
+Project Scores
+Student Activity
+23. PAYMENT SYSTEM
+Free Courses
+Monthly Subscription
+Annual Subscription
+One-Time Purchase
+Scholarships
+Coupon Codes
+24. DATABASE DESIGN
+
+Core tables:
+
+users
+roles
+profiles
+
+courses
+modules
+lessons
+
+videos
+resources
+
+enrollments
+progress
+
+quizzes
+questions
+answers
+
+assignments
+submissions
+
+projects
+project_submissions
+
+certificates
+
+badges
+achievements
+
+forums
+posts
+comments
+
+notifications
+
+payments
+subscriptions
+
+jobs
+
+companies
+
+mentors
+
+sessions
+25. PRODUCTION ARCHITECTURE
+Frontend
+│
+├── Next.js
+├── TailwindCSS
+├── TypeScript
+└── Shadcn UI
+
+Backend
+│
+├── Go
+├── Gin
+├── gRPC
+└── REST APIs
+
+Database
+│
+├── PostgreSQL
+├── Redis
+└── Elasticsearch
+
+Storage
+│
+├── AWS S3
+├── CloudFront
+└── CDN
+
+Authentication
+│
+├── JWT
+├── OAuth
+└── MFA
+
+DevOps
+│
+├── Docker
+├── Kubernetes
+├── GitHub Actions
+└── Monitoring
+Final Product Vision
+
+A user should be able to:
+
+Discover a course.
+Register.
+Watch lectures like CS50.
+Read notes and resources.
+Complete quizzes.
+Write code in the browser.
+Submit assignments.
+Receive automatic grading.
+Interact with mentors.
+Join community discussions.
+Build portfolio projects.
+Earn verified certificates.
+Apply for jobs.
+Be hired through On2Code.
